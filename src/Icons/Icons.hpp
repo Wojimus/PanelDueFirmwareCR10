@@ -11,6 +11,7 @@
 
 extern const uint16_t IconPaletteLight[];
 extern const uint16_t IconPaletteDark[];
+extern const uint16_t IconPaletteWoj[];
 
 extern const uint8_t IconNozzle1[], IconNozzle2[], IconNozzle3[], IconNozzle4[];
 
