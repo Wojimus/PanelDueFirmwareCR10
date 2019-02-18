@@ -704,7 +704,7 @@ void CreateTemperatureGrid(const ColourScheme& colours)
 		mgr.AddField(b);
 
 		// Add the current temperature field
-		DisplayField::SetDefaultColours(colours.infoTextColour, colours.defaultBackColour);
+		DisplayField::SetDefaultColours(colours.labelTextColour, colours.defaultBackColour);
 		FloatField *f = new FloatField(row3 + labelRowAdjust, column, tempButtonWidth, TextAlignment::Centre, 1);
 		f->SetValue(0.0);
 		f->Show(false);
@@ -956,7 +956,7 @@ void CreateMainPages(uint32_t language, const ColourScheme& colours)
 
 	// Create the fields that are common to the Control and Print pages
 	DisplayField::SetDefaultColours(colours.titleBarTextColour, colours.titleBarBackColour);
-	mgr.AddField(nameField = new StaticTextField(row1, 0, DisplayX - statusFieldWidth, TextAlignment::Centre, machineName.c_str()));
+	mgr.AddField(nameField = new StaticTextField(row1, 15, DisplayX - statusFieldWidth, TextAlignment::Left, machineName.c_str()));
 	mgr.AddField(statusField = new StaticTextField(row1, DisplayX - statusFieldWidth, statusFieldWidth, TextAlignment::Right, nullptr));
 	CreateTemperatureGrid(colours);
 	commonRoot = mgr.GetRoot();		// save the root of fields that we display on more than one page
@@ -1093,6 +1093,8 @@ namespace UI
 	{
 		if (heater < MaxHeaters && currentTemps[heater] != nullptr)
 		{
+			if (heater == 2){ heater = 1; }//Replace Heater Number since my heater is connected to heater 2 //DELETE THIS IF CONNECTED TO HEATER 1
+			else if (heater == 1){ heater = 2; }															//DELETE THIS IF CONNECTED TO HEATER 1
 			currentTemps[heater]->SetValue(fval);
 		}
 	}
@@ -1101,6 +1103,8 @@ namespace UI
 	{
 		if (heater < MaxHeaters)
 		{
+			if (heater == 2){ heater = 1; } //Replace Heater Number since my heater is connected to heater 2 //DELETE THIS IF CONNECTED TO HEATER 1
+			else if (heater == 1){ heater = 2; }															 //DELETE THIS IF CONNECTED TO HEATER 1
 			heaterStatus[heater] = ival;
 			if (currentTemps[heater] != nullptr)
 			{
@@ -1109,7 +1113,7 @@ namespace UI
 							: (ival == 3) ? colours->errorBackColour
 							: (ival == 4) ? colours->tuningBackColour
 							: colours->defaultBackColour;
-				currentTemps[heater]->SetColours((ival == 3) ? colours->errorTextColour : colours->infoTextColour, c);
+				currentTemps[heater]->SetColours((ival == 3) ? colours->errorTextColour : colours->labelTextColour, c);
 			}
 		}
 	}
@@ -1406,6 +1410,7 @@ namespace UI
 	// Update an active temperature
 	void UpdateActiveTemperature(size_t index, int ival)
 	{
+		if (index == 2){ index = 1; }
 		if (index < MaxHeaters)
 		{
 			UpdateField(activeTemps[index], ival);
@@ -1415,6 +1420,7 @@ namespace UI
 	// Update a standby temperature
 	void UpdateStandbyTemperature(size_t index, int ival)
 	{
+		if (index == 2){ index = 1; }
 		if (index < MaxHeaters)
 		{
 			UpdateField(standbyTemps[index], ival);

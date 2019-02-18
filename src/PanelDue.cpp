@@ -1141,7 +1141,7 @@ void ProcessArrayEnd(const char id[], const size_t indices[])
 	}
 	if (strcmp(id, "heaters^") == 0)
 	{
-		UI::SetNumHeaters(indices[0]);					// tell the user interface how many heaters there are
+		UI::SetNumHeaters(indices[0] - 1);					// tell the user interface how many heaters there are  //DELETE The -1 if you are using heater 1
 	}
 }
 

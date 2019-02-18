@@ -116,7 +116,6 @@ void DisplayField::SetColours(Colour pf, Colour pb)
 		changed = true;	
 	}
 }
-
 // ButtonPress class methods
 ButtonPress::ButtonPress() : button(nullptr), index(0) { }
 
