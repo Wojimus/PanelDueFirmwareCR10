@@ -236,17 +236,13 @@ add_custom_command( OUTPUT paneldue.bin
 	DEPENDS paneldue.elf
 	COMMAND arm-none-eabi-objcopy -O binary paneldue.elf paneldue.bin
 )
-add_custom_command( OUTPUT paneldue-logo.bin
-	DEPENDS paneldue.bin ${PROJECT_SOURCE_DIR}/SplashScreens/SplashScreen-Duet3D-800x480.bin
-	COMMAND cat paneldue.bin ${PROJECT_SOURCE_DIR}/SplashScreens/SplashScreen-Duet3D-800x480.bin > paneldue-logo.bin
-)
 
 add_custom_target( bin ALL
-	DEPENDS paneldue.bin paneldue-logo.bin
+	DEPENDS paneldue.bin
 )
 
 add_custom_target( print-device ALL
-	DEPENDS paneldue.bin paneldue-logo.bin
+	DEPENDS paneldue.bin
 	COMMAND echo "*** Build for PanelDueFirmware ${DEVICE} successfully finished ***"
 )
 
