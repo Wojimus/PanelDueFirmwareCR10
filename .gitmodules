@@ -3,7 +3,10 @@
 	url = https://github.com/Duet3D/RRFLibraries.git
 [submodule "lib/qoi"]
 	path = lib/qoi
-	url = https://github.com/Duet3D/qoi.git
+	url = https://github.com/Wojimus/qoi
 [submodule "lib/base64"]
 	path = lib/base64
-	url = git@github.com:Duet3D/base64.git
+	url = https://github.com/Wojimus/base64
+[submodule "lib/RRFLibraries"]
+	path = lib/RRFLibraries
+	url = https://github.com/Wojimus/RRFLibraries
