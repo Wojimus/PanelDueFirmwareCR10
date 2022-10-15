@@ -2,13 +2,12 @@ cmake_minimum_required( VERSION 3.11 )
 
 #configure_file(src/config.h.in src/config.h)
 
-include( "env.cmake" OPTIONAL )
-
 find_program(CCACHE_PROGRAM ccache)
 if(CCACHE_PROGRAM)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
 endif()
 
+set(CMAKE_CXX_STANDARD 20)
 set( CMAKE_TOOLCHAIN_FILE "toolchains/arm-none-eabi.cmake" )
 
 # skip compiler build tests
@@ -20,7 +19,7 @@ project( paneldue
 	HOMEPAGE_URL "https://github.com/Duet3D/PanelDueFirmware"
 )
 
-add_executable( paneldue.elf )
+add_executable( paneldue.elf src/Wallpaper/Wallpaper.cpp src/Wallpaper/Wallpaper.hpp)
 
 # basic compiler flags
 set( BASIC_C_FLAGS "-O2 -g -DNDEBUG -DBOARD=USER_BOARD" )
@@ -245,4 +244,3 @@ add_custom_target( print-device ALL
 	DEPENDS paneldue.bin
 	COMMAND echo "*** Build for PanelDueFirmware ${DEVICE} successfully finished ***"
 )
-

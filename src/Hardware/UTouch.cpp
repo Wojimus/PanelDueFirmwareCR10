@@ -121,7 +121,7 @@ bool UTouch::getTouchData(bool wantY, uint16_t &rslt)
 		sum += val;
 	}
 
-	// Test whether every reading is within 'maxDiff' of the average reading.
+	// Test.txt whether every reading is within 'maxDiff' of the average reading.
 	// If it is, return the average reading.
 	// If not, take another reading and try again, up to 'maxAttempts' times.
 	uint16_t avg;

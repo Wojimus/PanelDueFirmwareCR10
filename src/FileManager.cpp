@@ -35,6 +35,8 @@ namespace FileManager
 
 	const char * _ecv_array filesRoot = "0:/gcodes";
 	const char * _ecv_array macrosRoot = "0:/macros";
+    const char * _ecv_array sysRoot = "0:/sys";
+
 	const uint32_t FileListRequestTimeout = 8000;				// file info request timeout in milliseconds
 
 	static FileList fileLists[3];								// one for gcode file list, one for macro list, one for receiving new lists into
@@ -45,6 +47,7 @@ namespace FileManager
 	static Path fileDirectoryName;
 	static FileSet gcodeFilesList(filesRoot, NumDisplayedFiles, true);
 	static FileSet macroFilesList(macrosRoot, NumDisplayedMacros, false);
+    static FileSet sysFilesList(sysRoot, 0, false);
 	static FileSet * null displayedFileSet = nullptr;
 	static uint8_t numVolumes = 1;								// how many SD card sockets we have (normally 1 or 2)
 

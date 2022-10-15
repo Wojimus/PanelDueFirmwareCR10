@@ -38,10 +38,11 @@
 #include <ObjectModel/PrinterStatus.hpp>
 #include "ControlCommands.hpp"
 #include "Library/Thumbnail.hpp"
+#include "Wallpaper/Wallpaper.hpp"
 
 extern uint16_t _esplash[];							// defined in linker script
 
-#define DEBUG	(0) // 0: off, 1: MessageLog, 2: Uart
+#define DEBUG	(3) // 0: off, 1: MessageLog, 2: Uart, 3: MessageLog Shortened
 #include "Debug.hpp"
 
 #define DEBUG2	(0) // 0: off, 1: DebugField
@@ -158,6 +159,8 @@ static bool initialized = false;
 static float pollIntervalMultiplier = 1.0;
 static uint32_t printerPollInterval = defaultPrinterPollInterval;
 
+static struct WallpaperTile wallpaperTile;
+
 static struct ThumbnailData thumbnailData;
 static struct Thumbnail thumbnail;
 
@@ -218,7 +221,7 @@ enum ReceivedDataEvent
 	rcvM20Err,
 	rcvM20Files,
 
-	// Keys for M36 respons
+	// Keys for M36 response
 	rcvM36Filament,
 	rcvM36Filename,
 	rcvM36GeneratedBy,
@@ -601,7 +604,7 @@ static struct Seq* GetNextSeq(struct Seq *current)
 
 static struct Seq *FindSeqByKey(const char *key)
 {
-	dbg("key %s\n", key);
+	dbg2("key %s\n", key);
 
 	for (size_t i = 0; i < ARRAY_SIZE(seqs); ++i)
 	{
@@ -623,7 +626,7 @@ static void UpdateSeq(const ReceivedDataEvent seqid, int32_t val)
 		{
 			if (seqs[i].lastSeq != val)
 			{
-				dbg("%s %d -> %d\n", seqs[i].key, seqs[i].lastSeq, val);
+				////dbg("%s %d -> %d\n", seqs[i].key, seqs[i].lastSeq, val);
 				seqs[i].lastSeq = val;
 				seqs[i].state = SeqStateUpdate;
 			}
@@ -914,7 +917,7 @@ static void SetStatus(OM::PrinterStatus newStatus)
 {
 	if (newStatus != status)
 	{
-		dbg("printer status %d -> %d\n", status, newStatus);
+		//dbg("printer status %d -> %d\n", status, newStatus);
 		UI::ChangeStatus(status, newStatus);
 
 		status = newStatus;
@@ -927,7 +930,7 @@ static void SetStatus(OM::PrinterStatus newStatus)
 // Set the status back to "Connecting"
 static void Reconnect()
 {
-	dbg("Reconnect\n");
+	//dbg("Reconnect\n");
 
 	initialized = false;
 	lastPollTime = 0;
@@ -1016,6 +1019,16 @@ static void StartReceivedMessage()
 		ThumbnailInit(thumbnail);
 		memset(&thumbnailData, 0, sizeof(thumbnailData));
 	}
+
+    if (wallpaperTile.state == WallpaperTileState::WPInit)
+    {
+        //dbg("%s", "Initialising Wallpaper Tile");
+        wallpaperTile.Init();
+        WallpaperTileInit(wallpaperTile);
+        memset(&wallpaperTile.data, 0, sizeof(wallpaperTile.data));
+        wallpaperTile.state = WallpaperTileState::WPHeader;
+        //dbg("%s", "Waiting To Receive Tile Header");
+    }
 }
 
 static void EndReceivedMessage()
@@ -1026,7 +1039,7 @@ static void EndReceivedMessage()
 	if (currentRespSeq != nullptr)
 	{
 		currentRespSeq->state = outOfBuffers ? SeqStateError : SeqStateOk;
-		dbg("seq %s %d DONE\n", currentRespSeq->key, currentRespSeq->state);
+		////dbg("seq %s %d DONE\n", currentRespSeq->key, currentRespSeq->state);
 		currentRespSeq = nullptr;
 	}
 	outOfBuffers = false;							// Reset the out-of-buffers flag
@@ -1040,9 +1053,9 @@ static void EndReceivedMessage()
 
 	if (thumbnailContext.parseErr != 0 || thumbnailContext.err != 0)
 	{
-		dbg("thumbnail parseErr %d err %d.\n",
-			thumbnailContext.parseErr,
-			thumbnailContext.err);
+		//dbg("thumbnail parseErr %d err %d.\n",
+		//	thumbnailContext.parseErr,
+		//	thumbnailContext.err);
 		thumbnailContext.state = ThumbnailState::Init;
 	}
 #if 0 // && DEBUG
@@ -1056,6 +1069,24 @@ static void EndReceivedMessage()
 	}
 #endif
 	int ret;
+
+    switch(wallpaperTile.state) {
+        case WallpaperTileState::WPInit:
+        case WallpaperTileState::WPHeader:
+        case WallpaperTileState::WPDataRequest:
+        case WallpaperTileState::WPDataWait:
+            break;
+        case WallpaperTileState::WPData:
+            if (wallpaperTile.next == 0) { // Tile Ready To Draw
+                //dbg("%s", "Finished Loading Wallpaper");
+                DrawWallpaperData(wallpaperTile, lcd);
+                //Reset Wallpaper Tile
+                wallpaperTile.state = WallpaperTileState::WPInit;
+            }
+            else { // Get Remaining Data
+                wallpaperTile.state = WallpaperTileState::WPDataRequest;
+            }
+    }
 
 	switch (thumbnailContext.state) {
 	case ThumbnailState::Init:
@@ -1154,11 +1185,11 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 	// no matching key found
 	if (!searchResult)
 	{
-		//dbg("no matching key found for %s\n", id.c_str());
+		////dbg("no matching key found for %s\n", id.c_str());
 		return;
 	}
 	const ReceivedDataEvent rde = searchResult->val;
-	//dbg("event: %s(%d) rtype %d data '%s'\n", searchResult->key, searchResult->val, currentResponseType, data);
+	////dbg("event: %s(%d) rtype %d data '%s'\n", searchResult->key, searchResult->val, currentResponseType, data);
 	switch (rde)
 	{
 	// M409 section
@@ -1717,7 +1748,7 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 							compare<OM::PrinterStatusMapEntry>);
 			if (!statusFromMap)
 			{
-				dbg("unknown status %s", data);
+				//dbg("unknown status %s", data);
 				break;
 			}
 			SetStatus(statusFromMap->val);
@@ -1911,7 +1942,15 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 		}
 		break;
 	case rcvM36Filename:
-		thumbnailContext.filename.copy(data);
+        dbg("M36: %s", data);
+        if (strncmp("Wallpaper", data, 9) == 0) {
+            dbg("Wallpaper Tile Received:  %s", data);
+            wallpaperTile.filename.copy(data);
+            wallpaperTile.state = WallpaperTileState::WPDataRequest;
+        }
+        else {
+            thumbnailContext.filename.copy(data);
+        }
 		break;
 
 	case rcvM36GeneratedBy:
@@ -1984,6 +2023,7 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 		if (GetUnsignedInteger(data, offset))
 		{
 			thumbnailContext.next = offset;
+            wallpaperTile.next = offset;
 			dbg("receive initial offset %d.\n", offset);
 		}
 		break;
@@ -2003,9 +2043,15 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 		break;
 
 	case rcvM361ThumbnailData:
+        //Thumbnail
 		thumbnailData.size = std::min(strlen(data), sizeof(thumbnailData.buffer));
 		memcpy(thumbnailData.buffer, data, thumbnailData.size);
 		thumbnailContext.state = ThumbnailState::Data;
+        //Wallpaper
+        memcpy(&wallpaperTile.data[wallpaperTile.dataSize], data, strlen(data));
+        wallpaperTile.dataSize += strlen(data); //Increase DataSize
+        wallpaperTile.state = WallpaperTileState::WPData;
+        //dbg("Received Thumbnail Data Length: %d", strlen(data));
 		break;
 	case rcvM361ThumbnailErr:
 		if (!GetInteger(data, thumbnailContext.err))
@@ -2020,11 +2066,14 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 		}
 		break;
 	case rcvM361ThumbnailNext:
-		if (!GetUnsignedInteger(data, thumbnailContext.next))
+        uint32_t next;
+		if (!GetUnsignedInteger(data, next))
 		{
 			thumbnailContext.parseErr = -3;
 			break;
 		}
+        thumbnailContext.next = next;
+        wallpaperTile.next = next;
 		dbg("receive next offset %d.\n", thumbnailContext.next);
 		break;
 	case rcvM361ThumbnailOffset:
@@ -2033,7 +2082,7 @@ static void ProcessReceivedValue(StringRef id, const char data[], const size_t i
 			thumbnailContext.parseErr = -4;
 			break;
 		}
-		dbg("receive current offset %d.\n", thumbnailContext.offset);
+		//dbg("receive current offset %d.\n", thumbnailContext.offset);
 		break;
 
 	case rcvControlCommand:
@@ -2229,6 +2278,7 @@ static pwm_channel_t backlightPwm =
  */
 int main(void)
 {
+
 	bool initializedSettings = false;
 
 	SystemInit();						// set up the clock etc.
@@ -2322,7 +2372,7 @@ int main(void)
 	if (rstc_get_reset_cause(RSTC) != RSTC_SOFTWARE_RESET && _esplash[0] == DISPLAY_X && _esplash[1] == DISPLAY_Y)
 	{
 		lcd.fillScr(black);
-		lcd.drawCompressedBitmapBottomToTop(0, 0, DISPLAY_X, DISPLAY_Y, _esplash + 2);
+        lcd.drawCompressedBitmapBottomToTop(0, 0, DISPLAY_X, DISPLAY_Y, _esplash + 2);
 		const uint32_t now = SystemTick::GetTickCount();
 		do
 		{
@@ -2336,6 +2386,21 @@ int main(void)
 	}
 
 	mgr.Refresh(true);								// draw the screen for the first time
+
+    /*
+    //Wallpaper
+    uint16_t genWallpaper[80][48];
+    for (int x = 0; x < 80; ++x) {
+        for (int y = 0; y < 48; ++y) {
+            genWallpaper[x][y] = (uint16_t)(x*y);
+        }
+    }
+    lcd.drawBitmap16(0, 0, 80, 48, reinterpret_cast<const uint16_t *>(genWallpaper), 5);
+    const uint32_t now1 = SystemTick::GetTickCount();
+    do{ continue;}
+    while(SystemTick::GetTickCount() - now1 < 5000);
+    */
+
 	UI::UpdatePrintingFields();
 
 	// Hide all tools and heater related columns initially
@@ -2355,7 +2420,7 @@ int main(void)
 
 	lastActionTime = SystemTick::GetTickCount();
 
-	dbg("basic init DONE\n");
+	//dbg("basic init DONE\n");
 
 
 	MessageLog::AppendMessage("Info: successfully initialized.");
@@ -2373,6 +2438,8 @@ int main(void)
 	for (;;)
 	{
 		const uint32_t now = SystemTick::GetTickCount();
+
+        //SerialIo::Sendf("M36.1 P%s S%d\n", "0x0y.gcode", 30);
 
 		SerialIo::CheckInput();
 
@@ -2410,16 +2477,16 @@ int main(void)
 
 			if (touched)
 			{
-				dbg("delta %d state %d\n", now - lastTouchTime, event.state);
+				//dbg("delta %d state %d\n", now - lastTouchTime, event.state);
 
-				dbg("pressed\n");
+				//dbg("pressed\n");
 				lastTouchTime = SystemTick::GetTickCount();
 
 				event.x = x;
 				event.y = y;
 			}
 		} else if (event.state != TouchEvent::EventStateReleased && now - lastTouchTime >= normalTouchDelay) {
-			//dbg("released\n");
+			////dbg("released\n");
 			touched = true;
 			event.state = TouchEvent::EventStateReleased;
 		}
@@ -2429,7 +2496,7 @@ int main(void)
 		    currentAlert.mode >= 0 &&
 		    currentAlert.seq != lastAlertSeq)
 		{
-			dbg("message updated last action time\n");
+			//dbg("message updated last action time\n");
 			lastActionTime = SystemTick::GetTickCount();
 		}
 
@@ -2443,7 +2510,7 @@ int main(void)
 		{
 			if (backlight->GetState() != BacklightStateDimmed)
 			{
-				dbg("dim brightness\n");
+				//dbg("dim brightness\n");
 				backlight->SetState(BacklightStateDimmed);
 			}
 		}
@@ -2451,7 +2518,7 @@ int main(void)
 		{
 			if (backlight->GetState() != BacklightStateNormal)
 			{
-				dbg("backlight state to normal\n");
+				//dbg("backlight state to normal\n");
 				backlight->SetState(BacklightStateNormal);
 			}
 		}
@@ -2547,8 +2614,8 @@ int main(void)
 
 		if (stateOld != thumbnailContext.state)
 		{
-			dbg("thumbnail state %d -> %d.\n",
-					stateOld, thumbnailContext.state);
+			//dbg("thumbnail state %d -> %d.\n",
+			//		stateOld, thumbnailContext.state);
 			stateOld = thumbnailContext.state;
 		}
 #endif
@@ -2579,7 +2646,7 @@ int main(void)
 					currentReqSeq = GetNextSeq(currentReqSeq);
 					if (currentReqSeq != nullptr)
 					{
-						dbg("requesting %s\n", currentReqSeq->key);
+						////dbg("requesting %s\n", currentReqSeq->key);
 						SerialIo::Sendf("M409 K\"%s\" F\"%s\"\n", currentReqSeq->key, currentReqSeq->flags);
 						lastPollTime = SystemTick::GetTickCount();
 					}
@@ -2588,7 +2655,7 @@ int main(void)
 						// Once we get here the first time we will have work all seqs once
 						if (!initialized)
 						{
-							dbg("seqs init DONE\n");
+							//dbg("seqs init DONE\n");
 							UI::AllToolsSeen();
 							initialized = true;
 						}
@@ -2611,11 +2678,23 @@ int main(void)
 			}
 			else if (now > lastPollTime + printerPollInterval + printerResponseTimeout)	  // request timeout
 			{
-				dbg("request timeout\n");
+				//dbg("request timeout\n");
 				SerialIo::Sendf("M409 F\"d99f\"\n");
 				lastPollTime = SystemTick::GetTickCount();
 			}
 		}
+
+        //Wallpaper
+        if (wallpaperTile.state == WallpaperTileState::WPDataRequest && wallpaperTile.next != 0) {
+            dbg("M36.1 P\"%s\" S%d\n",
+                wallpaperTile.filename.c_str(),
+                wallpaperTile.next);
+            SerialIo::Sendf("M36.1 P\"%s\" S%d\n",
+                            wallpaperTile.filename.c_str(),
+                            wallpaperTile.next);
+            lastPollTime = SystemTick::GetTickCount();
+            wallpaperTile.state = WallpaperTileState::WPDataWait;
+        }
 	}
 }
 
