@@ -19,7 +19,7 @@ project( paneldue
 	HOMEPAGE_URL "https://github.com/Duet3D/PanelDueFirmware"
 )
 
-add_executable( paneldue.elf src/Wallpaper/Wallpaper.cpp src/Wallpaper/Wallpaper.hpp)
+add_executable( paneldue.elf src/Wallpaper/Wallpaper.cpp src/Wallpaper/Wallpaper.hpp src/Icons/WojIcons.cpp src/Icons/WojIcons.hpp)
 
 # basic compiler flags
 set( BASIC_C_FLAGS "-O2 -g -DNDEBUG -DBOARD=USER_BOARD" )

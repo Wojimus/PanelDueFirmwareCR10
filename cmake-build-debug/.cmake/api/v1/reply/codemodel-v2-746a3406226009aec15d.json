@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "lib/librrf",
+					"jsonFile" : "directory-lib.librrf-Debug-0d9da04f71b0a7b0de8c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/librrf",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "paneldue",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "librrf",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin-Debug-caa0232edbecd0945aba.json",
+					"name" : "bin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paneldue.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paneldue.elf-Debug-9735b5876d2a8d8f2440.json",
+					"name" : "paneldue.elf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "print-device::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-print-device-Debug-16f7ac4c8231de44bcda.json",
+					"name" : "print-device",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rrf::@518a90957b6a061abf99",
+					"jsonFile" : "target-rrf-Debug-6ca80448eec1f3a868b8.json",
+					"name" : "rrf",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Github/PanelDueFirmware/cmake-build-debug",
+		"source" : "D:/Github/PanelDueFirmware"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -21,26 +21,468 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="594f187b-6ba2-4d91-a04f-c9925bf1a297" name="Changes" comment="Added Run Config To Create Binary, Fully Setup">
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageConverter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageTiling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Images/Gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Images/Wallpaper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Images/WallpaperSmall.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ProbablyUnneeded.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/RGBHexUtils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wallpaper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Icons/WojIcons.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Icons/WojIcons.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/IconSrc/Home.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Debug.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Debug.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hardware/UTouch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hardware/UTouch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3ec9d93e6af1af7f58d6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-10T02-31-01-0115.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-paneldue.elf-Debug-2d9f7ec9fc9edb9319ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/Icons/HomeIcons.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/Icons/HomeIcons.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/PanelDue.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/PanelDue.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/UI/UserInterface.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/UI/UserInterface.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/Wallpaper/Wallpaper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/paneldue.elf.dir/src/Wallpaper/Wallpaper.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/paneldue.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/paneldue.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/paneldue.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/paneldue.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/paneldue.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/paneldue.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Configuration.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Configuration.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Icons/HomeIcons.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Icons/HomeIcons.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelDue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelDue.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/UserInterface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UserInterface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Version.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Version.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/ImageConverter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/ImageConverter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageConverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageTiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/ImageTiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper0X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper120X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper160X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper200X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper240X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper280X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper320X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper360X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper400X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper40X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper440X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper480X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper520X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper560X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper600X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper640X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper680X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper720X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper760X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X0Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X120Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X144Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X168Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X192Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X216Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X240Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X24Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X264Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X288Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X312Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X336Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X360Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X384Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X408Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X432Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X456Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X48Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X72Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/Wallpaper/Wallpaper80X96Y.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate.nu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/activate_this.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/deactivate.nu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/f2py.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/fonttools.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pip-3.9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pip3.9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pydoc.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pyftmerge.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pyftsubset.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/ttx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/wheel-3.9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/wheel.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/wheel3.9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/Scripts/wheel3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/ImageConverter/venv/share/man/man1/ttx.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wallpaper/Wallpaper.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +518,9 @@
     <option name="minorVersion" value="2.3" />
   </component>
   <component name="ProjectId" id="2FgXJBi2UrvdUQJzB6UrMBE5Nxn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,7 +534,7 @@
     &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Github/PanelDueFirmware/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Github/RepRapFirmware&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;
   }
@@ -113,6 +557,11 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.Create Binary">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Create Binary" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-O binary paneldue.elf paneldue.bin" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$CMakeCurrentBuildDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="paneldue" TARGET_NAME="bin" CONFIG_NAME="Debug" RUN_PATH="$ARM$/arm-none-eabi-objcopy.exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -201,6 +650,8 @@
       <workItem from="1665338323894" duration="1240000" />
       <workItem from="1665340881956" duration="27176000" />
       <workItem from="1665369331655" duration="4701000" />
+      <workItem from="1665864192063" duration="14596000" />
+      <workItem from="1665937654863" duration="6397000" />
     </task>
     <task id="LOCAL-00001" summary="Added Run Config To Create Binary, Fully Setup">
       <created>1664923692449</created>
@@ -230,6 +681,17 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="Added Run Config To Create Binary, Fully Setup" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Run Config To Create Binary, Fully Setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/UI/Display.cpp</url>
+          <line>308</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

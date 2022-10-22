@@ -39,7 +39,7 @@
 
 MainWindow mgr;
 
-#define DEBUG 0
+#define DEBUG 3
 #include "Debug.hpp"
 
 // Public fields
@@ -1092,6 +1092,9 @@ static void CreateSetupTabFields(uint32_t language, const ColourScheme& colours)
 // Create the fields that are displayed on all pages
 static void CreateCommonFields(const ColourScheme& colours)
 {
+    //WOJ UI
+
+
 	DisplayField::SetDefaultColours(colours.buttonTextColour, colours.buttonTextBackColour, colours.buttonBorderColour, colours.buttonGradColour,
 									colours.buttonPressedBackColour, colours.buttonPressedGradColour, colours.pal);
 	tabControl = AddTextButton(rowTabs, 0, 4, strings->control, evTabControl, nullptr);
@@ -1111,6 +1114,7 @@ static void CreateMainPages(uint32_t language, const ColourScheme& colours)
 	CreateCommonFields(colours);
 	baseRoot = mgr.GetRoot();		// save the root of fields that we usually display
 
+
 	// Create the fields that are common to the Control and Print pages
 	DisplayField::SetDefaultColours(colours.titleBarTextColour, colours.titleBarBackColour);
 	mgr.AddField(nameField = new StaticTextField(row1, 0, DisplayX - statusFieldWidth, TextAlignment::Centre, machineName.c_str()));
@@ -1124,6 +1128,7 @@ static void CreateMainPages(uint32_t language, const ColourScheme& colours)
 	CreateMessageTabFields(colours);
 	CreateSetupTabFields(language, colours);
 	CreateScreensaverPopup();
+
 }
 
 namespace UI
@@ -1757,6 +1762,7 @@ namespace UI
 	// This is called just before the main polling loop starts. Display the default page.
 	void ShowDefaultPage()
 	{
+        dbg("%s", "Displaying Default Page");
 		ChangePage(tabControl);
 	}
 

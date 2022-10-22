@@ -11,9 +11,9 @@
 #include "Configuration.hpp"
 #include "Hardware/UTFT.hpp"
 
-//static bool WallpaperTilePending;
+static bool WallpaperPending;
 
-enum WallpaperTileState {
+enum WallpaperState {
     WPInit = 0,
     WPHeader,
     WPDataRequest,
@@ -21,28 +21,24 @@ enum WallpaperTileState {
     WPData
 };
 
-struct WallpaperTile
+struct Wallpaper
 {
+    enum WallpaperState state;
+
     uint16_t width;
+    uint16_t x;
     uint16_t height;
-    uint32_t pixel_count;
+    uint16_t y;
 
-    String<MaxFilnameLength> filename;
-    uint32_t dataSize;
-    unsigned char data[3840];
-    uint32_t offset;
+    String<MaxFilenameLength> filename;
+    uint16_t dataSize;
+    unsigned char data[2048];
     uint32_t next;
-
-    enum WallpaperTileState state;
-
-    int16_t parseErr;
-    int32_t err;
-
+    uint16_t multiplierBitAmount;
 
     void Init();
 };
 
-void WallpaperTileInit(struct WallpaperTile &wpTile);
-void DrawWallpaperData(struct WallpaperTile &wpTile, UTFT &lcd);
+void DrawWallpaperData(struct Wallpaper &wallpaper, UTFT &lcd);
 
 #endif //PANELDUE_WALLPAPER_HPP
